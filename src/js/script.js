@@ -1,9 +1,9 @@
 $(function(){
 	//ページ内リンク
-	$('.js-header-item,.mv-btn,.footer-totop').click(function(){
-		let id = $(this).attr('href');
-		let headerHeight = $('header').outerHeight()
-		let position = $(id).offset().top-headerHeight;
+	$('.js-header-item').click(function(){
+		var id = $(this).attr('href');
+		var headerHeight = $('header').outerHeight()
+		var position = $(id).offset().top-headerHeight;
 		// console.log(id);
 		// console.log(headerHeight);
 		$('html,body').animate({

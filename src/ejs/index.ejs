@@ -1,53 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" />
-		<link rel="stylesheet" href="dist/css/animate.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css" />
-		<link rel="stylesheet" href="src/css/style.css" />
-		<title>chizumi_lamacat</title>
-		<meta name="description" content="ちづみ模写(初級編)">
-	</head>
 
-	<body class="drawer drawer--right">
-		<!-- header -->
-		<header class="header">
-			<a href="#"><h1 class="header-logo">
-					<img alt="logo" src="dist/img/header-logo.png" />
-			</h1></a>
-			<button type="button" class="drawer-toggle drawer-hamburger">
-				<img src="dist/img/hamburger.svg" alt="hamburger-icon" class="headr-icon" />
-			</button>
-			<nav class="header-nav">
-				<ul class="header-list">
-					<li class="header-item">
-						<a href="#cat1" class="js-header-item js-header-item-active ">cat1</a>
-					</li>
-					<li class="header-item">
-						<a href="#cat2" class="js-header-item ">cat2</a>
-					</li>
-					<li class="header-item">
-						<a href="#cat3" class="js-header-item ">cat3</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="drawer-nav" role="navigation">
-				<ul class="drawer-menu">
-					<li class="drawer-menu-item">
-						<img alt="logo" src="dist/img/header-logo.png" />
-					</li>
-					<li class="drawer-menu-item"><a href="#cat1" class="">cat1</a></li>
-					<li class="drawer-menu-item"><a href="#cat2" class="">cat2</a></li>
-					<li class="drawer-menu-item"><a href="#cat3" class="">cat3</a></li>
-				</ul>
-			</nav>
-		</header>
-		<!-- /header -->
-
+<% var title = 'chizumi_lamacat'; %>
+<% var description = 'ちづみ模写(初級編)'; %>
+<% include common/_header %>
 
 		<!-- mv -->
 		<section class="mv" id="totop">
@@ -234,20 +188,4 @@
 		</section>
 		<!-- /info -->
 
-<!-- footer -->
-<footer class="footer">
-	<p class="footer-logo">
-		<a href="#"><img src="dist/img/footer-logo.png" alt="footer-logo"/></a>
-	</p>
-	<p class="footer-copyright">copyright 2018 Iam a cat</p>
-</footer>
-<!-- /footer -->
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
-<script src="dist/js/wow.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
-<script src="dist/js/script.min.js"></script>
-</body>
-</html>
-
+<% include common/_footer %>
