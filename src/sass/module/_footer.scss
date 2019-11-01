@@ -1,0 +1,40 @@
+.footer {
+	background: #6A6A6A;
+	width: 100%;
+	padding: 18px 250px;
+	display: flex;
+	justify-content: space-between;
+
+	@include mq("tab") {
+		padding: 18px 150px;
+	}
+	@include mq("sp") {
+		padding: 18px 50px;
+	}
+
+
+
+	&-logo {
+		width: 49px;
+		height: 24px;
+
+		&:hover {
+			opacity: $opacity;
+		}
+
+
+	}
+
+
+	&-copyright {
+		font-size: 1.2rem;
+		color: $cr-txt-w;
+
+
+		@include mq("sp") {
+			text-align: center;
+		}
+	}
+
+
+}

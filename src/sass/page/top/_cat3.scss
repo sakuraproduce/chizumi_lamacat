@@ -1,0 +1,92 @@
+.cat3 {
+	background: $cr-bg-w;
+	padding-top: 0;
+	padding-bottom: 105px;
+
+	@include mq("tab") {
+		padding: 0 16px 100px;
+	}
+	@include mq("sp") {
+		padding: 0 16px 50px;
+	}
+
+	&-heading {
+		margin: 0 auto;
+		padding: 100px 0;
+		text-align: center;
+		@include font-size(4rem, 3rem);
+		font-weight: bold;
+
+		@include mq("sp") {
+			padding: 50px 0;
+		}
+	}
+
+	&-inner {
+		margin: 0 auto;
+		width: 980px;
+		max-width: 100%;
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				opacity: $opacity;
+			}
+		}
+	}
+
+	&-wrap {
+		display: flex;
+		padding: 13.5px 24px;
+		border-top: 1px solid #777777;
+
+		&:last-child {
+			border-bottom: 1px solid #777777;
+		}
+
+		@include mq("sp") {
+			display: block;
+		}
+	}
+
+	&-head {
+		display: flex;
+		font-weight: bold;
+		width: 214px;
+
+		@include mq("tab") {
+			width: 23%;
+		}
+
+		@include mq("sp") {
+			width: 100%;
+			margin-bottom: 8px;
+		}
+	}
+
+	&-label {
+		margin-left: 14px;
+		width: 84px;
+		height: 25px;
+		text-align: center;
+		border: 2px solid $cr-m;
+		color: $cr-m;
+
+		@include mq("tab") {
+			margin-right: 14px;
+		}
+	}
+
+	&-title {
+		width: 718px;
+
+		@include mq("tab") {
+			width: 77%;
+		}
+
+		@include mq("sp") {
+			width: 100%;
+		}
+	}
+}

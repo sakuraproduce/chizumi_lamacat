@@ -1,0 +1,47 @@
+.intro {
+	background: $cr-bg-w;
+	padding: 99.5px 0 100px;
+
+	@include mq("tab") {
+		padding: 100px 50px;
+	}
+
+	@include mq("sp") {
+		padding: 50px 30px;
+	}
+
+	&-inner {
+		margin: 0 auto;
+		width: 980px;
+		max-width: 100%;
+	}
+
+	&-title {
+		@include font-size(4rem, 3rem);
+		margin-bottom: 100px;
+
+		@include mq("tab") {
+			margin-bottom: 50px;
+		}
+		@include mq("sp") {
+			margin-bottom: 30px;
+		}
+	}
+
+	&-text {
+		@include font-size(2.4rem, 1.8rem);
+		margin-bottom: 100px;
+
+		@include mq("tab") {
+			margin-bottom: 50px;
+		}
+
+		@include mq("sp") {
+			margin-bottom: 30px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

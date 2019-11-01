@@ -1,0 +1,36 @@
+.catch {
+	background: resolve('catch.png') no-repeat center center / cover;
+	padding: 100px 250px 250px;
+
+	@include mq("tab") {
+		padding: 70px 100px;
+	}
+
+	@include mq("sp") {
+		padding: 70px 16px;
+	}
+
+	&-inner {
+		margin-left: auto;
+		width: 600px;
+		padding: 98px 75px 100px;
+		background: $cr-bg-w;
+		opacity: 0.51;
+
+		@include mq("tab") {
+			width: 100%;
+			margin: 0 auto;
+			padding: 50px 24px;
+		}
+	}
+
+	&-text {
+		font-weight: bold;
+		@include font-size(2rem, 1.8rem);
+		line-height: 1.7;
+
+		@include mq("sp") {
+			line-height: 1.6;
+		}
+	}
+}

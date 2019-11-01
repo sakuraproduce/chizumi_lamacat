@@ -1,0 +1,37 @@
+.info {
+	background: #8E8E8E;
+	padding: 100px 0 100px;
+
+	@include mq("tab") {
+		padding: 70px 16px 0;
+	}
+
+	&-inner {
+		width: 980px;
+		max-width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+
+		@include mq("sp") {
+			flex-direction: column;
+		}
+	}
+
+	&-wrap {
+		width: 30.6%;
+		color: $cr-txt-w;
+
+		@include mq("sp") {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+	}
+
+	&-title {
+		font-weight: bold;
+		font-size: 1.6rem;
+		border-bottom: 1px solid $cr-txt-w;
+		margin-bottom: 29px;
+	}
+}

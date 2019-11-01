@@ -1,0 +1,22 @@
+.mv {
+	background: resolve('mv.png') no-repeat center center / cover;
+	position: relative;
+	height: 986.5px;
+
+	@include mq("tab") {
+		height: 100vh;
+	}
+
+	&-logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		img {
+			width: 292px;
+			height: 144px;
+		}
+	}
+}
+
